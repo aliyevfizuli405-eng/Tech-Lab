@@ -1,0 +1,21 @@
+@import "./commons/header.css";
+@import "./main.css";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "DM Sans", sans-serif;
+}
+
+:root {
+    --primary-bg-color: #F9F3F0;
+    --primary-color: #292930;
+    --primary-subcolor: #777777;
+    --primary-color2: #3577F0;
+    --icon--color: #FF497C;
+    --icon--subcolor: #8C71DB;
+}

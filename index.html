@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./src/assets/css/root.css">
+
+    <!-- Boot Strap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+
+    <!-- IconsALL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AliAghayev132/iconsall/src/css/icons/all.css">
+</head>
+
+<body>
+
+
+    <div class="container-fluid p-0">
+        <!-- General container for taking whole screen -->
+        <header class="header">
+            <div class="container-sm">
+                <!-- An Alternative for margin 0 auto  -->
+                <div class="settings d-flex justify-content-between align-items-center">
+                    <div class="settings__dropdown d-flex ">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                English
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Azerbaijani</a></li>
+                                <li><a class="dropdown-item" href="#">Russian</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                USD
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                <li><a class="dropdown-item" href="#">AZN</a></li>
+                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="settings__link">
+                        <a href="" class="link-secondary p-1 text-decoration-none">Help</a>
+                        <a href="" class="link-secondary p-1 text-decoration-none">Join Us</a>
+                        <a href="" class="link-secondary p-1 text-decoration-none">Sign In</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Making navbar responsive -->
+            <div class="container-sm">
+                <nav class="d-flex justify-content-between align-items-center sticky-top bg-body p-3 nav nav__pure">
+                    <img src="./src/assets/images/logo/logo.png" alt="" class="logo">
+                    <div class="nav__links">
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Home
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Page
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <a href="" class="nav-link link-dark link-body-emphasis">About</a>
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Blog
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <a href="" class="nav-link link-dark">Contact</a>
+                    </div>
+                    <div class="nav__right d-flex gap-3">
+                        <button class="btn-icon"><i class="bi bi-search salam"></i>
+                        </button>
+                        <button class="btn-icon"><i class="bi bi-suit-heart salam"></i></button>
+                        <button class=" btn-icon">
+                            <i class="bi bi-cart3"></i>
+                        </button>
+                        <button class="btn-icon"><i class="bi bi-person salam"></i></button>
+                        <button class="btn-menu"><i class="bx bx-menu salam"></i></button>
+                    </div>
+            </div>
+            </nav>
+        </header>
+        <!-- Main Section -->
+        <section class="herobg">
+            <div class="container-sm">
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="col-sm-12 col-md-4 col-xl-4 col-xxl-4">
+                        <span class="subtitle"><i class="bi bi-fire"></i>Hot Deal In This Week</span>
+                        <br>
+                        <br>
+                        <h1 class="title" id="slideProductName">
+                            Roboco Wireless HeadPhone
+                        </h1>
+                        <a href=""><button class="btn-shop"><i class="bi bi-cart3"></i>Shop Now</button></a>
+                    </div>
+                    <!-- Swiper part -->
+                    <div class="col-sm-12 col-md-8 col-xl-8 col-xxl-8">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="images d-flex justify-content-between">
+                                        <img src="./src/assets/images/products/product-38.png" class="BigImg" alt="">
+                                        <img src="./src/assets/images/products/product-39.png" class="SmallImg" alt="">
+                                        <span class="price">49.99$</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="images d-flex justify-content-between">
+                                        <img src="./src/assets/images/products/product-39.png" class="BigImg" alt="">
+                                        <img src="./src/assets/images/products/product-38.png" class="SmallImg" alt="">
+                                        <span class="price">49.99$</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="images d-flex justify-content-between">
+                                        <img src="./src/assets/images/products/product-38.png" class="BigImg" alt="">
+                                        <img src="./src/assets/images/products/product-39.png" class="SmallImg" alt="">
+                                        <span class="price">49.99$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main class="main">
+            <div class="container-sm">
+                <section class="categories">
+                    <span class="subtitle"><i class="bi bi-tags"></i>Categories</span>
+                    <div class="category_text d-flex justify-content-between align-items-center">
+                        <h1 class="part_title">Browse by Category</h1>
+                        <div class="slide__btn">
+                            <button class="slide__arrow"><i class="bi bi-arrow-left"></i></button>
+                            <button class="slide__arrow"><i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="category__card">
+                                    <img src="./src/assets/images/categories/elec-1.png" alt="">
+                                    <h5>Phones</h5>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__card">
+                                    <img src="./src/assets/images/categories/elec-2.png" alt="">
+                                    <h5>Monitors</h5>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__card">
+                                    <img src="./src/assets/images/categories/elec-4.png" alt="">
+                                    <h5>Phones</h5>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__card">
+                                    <img src="./src/assets/images/categories/elec-5.png" alt="">
+                                    <h5>Computers</h5>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__card">
+                                    <img src="./src/assets/images/categories/elec-7.png" alt="">
+                                    <h5>Networking</h5>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__card">
+                                    <img src="./src/assets/images/categories/elec-8.png" alt="">
+                                    <h6>Gaming Console</h6>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__card">
+                                    <img src="./src/assets/images/categories/elec-9.png" alt="">
+                                    <h5>HeadPhone</h5>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__card">
+                                    <img src="./src/assets/images/categories/elec-10.png" alt="">
+                                    <h5>Camera&Photos</h5>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category__card">
+                                    <img src="./src/assets/images/categories/elec-11.png" alt="">
+                                    <h5>Accesoires</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination2"></div>
+                    </div>
+                    <div class="poster row">
+                        <div class="col-sm-12 col-md-6 col-xl-6 col-xxl-6">
+                            <span class="subtitle">Don't Miss!!</span>
+                            <h2 class="fs-1 mb-5">Enhance Your Music Experience</h2>
+                            <div class="timers">
+                                <span class="timer">0<br>Day</span>
+                                <span class="timer">00 <br>Hrs</span>
+                                <span class="timer">00 <br>Min</span>
+                                <span class="timer">00 <br>Sec</span>
+                            </div>
+                            <button class="btn btn-primary p-3">Check It Out!</button>
+                        </div>
+                        
+                        <div class="col-sm-12 col-md-6 col-xl-6 col-xxl-6 posterHeadphone">
+                            <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/poster/poster-03.png" alt="" class="Headphone">
+                        </div>
+                    </div>
+                </section>
+                <section class="Products">
+                    <span class="subtitle2"><i class = "bi bi-basket2-fill mor p-1"></i> Our Products</span>
+                    <div class="category_text d-flex justify-content-between align-items-center">
+                        <h1 class="part_title">Browse by Category</h1>
+                        <div class="slide__btn">
+                            <button class="slide__arrow"><i class="bi bi-arrow-left"></i></button>
+                            <button class="slide__arrow"><i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="product__container" id="ProductContainer">
+                       
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+        });
+    </script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+    let swiper2 = new Swiper('.mySwiper2', {
+        slidesPerView: 2,
+        spaceBetween: 15,
+        freeMode: true,
+
+        pagination: {
+            el: '.swiper-pagination2',
+            clickable: true,
+        },
+
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+
+            992: {
+                slidesPerView: 5,
+                spaceBetween: 25,
+            },
+
+            1200: {
+                slidesPerView: 7,
+                spaceBetween: 30,
+            }
+        }
+    });
+</script>
+
+<script src="./src/assets/js/main.js"></script>
+</body>
+
+</html>

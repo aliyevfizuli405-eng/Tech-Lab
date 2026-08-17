@@ -1,0 +1,282 @@
+@import "./root.css";
+
+
+/* Hero  BG */
+.herobg {
+    padding: 5.7rem;
+    background-color: var(--primary-bg-color);
+}
+
+.subtitle {
+    color: var(--icon--color);
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.subtitle2{
+    color: var(--icon--subcolor);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.title {
+    margin-bottom: 2.5rem;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.bi-fire {
+    background-color: var(--icon--color);
+    color: #fff;
+    border-radius: 10px;
+    padding: 3px;
+    margin-bottom: 2rem;
+}
+
+.btn-icon {
+    background-color: #ffffff00;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.btn-icon:hover {
+    width: 30px;
+    height: 30px;
+    background-color: var(--icon--color) !important;
+    padding: 3px;
+    color: white;
+    border-radius: 50%;
+}
+
+.btn-shop {
+    background-color: #fff;
+    padding: 16px 38px;
+    border-color: #ffffff00;
+    border-radius: 4px;
+}
+
+.btn-shop:hover {
+    transform: scale(1.15);
+}
+
+.images {
+    align-items: flex-end;
+    position: relative;
+}
+
+.BigImg {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.SmallImg {
+    max-width: 190px;
+    height: auto;
+    object-fit: cover;
+}
+
+.price {
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90px;
+    max-height: 90px;
+    min-width: 70px;
+    min-height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: var(--primary-color2);
+    padding: 5px;
+}
+
+/* Categories */
+
+.categories {
+    padding: 90px 0px;
+}
+
+.part_title {
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.slide__arrow {
+    width: 50px;
+    height: 50px;
+    background-color: #f6f7fb;
+    border-radius: 6px;
+    border: 1px solid #f6f7fb;
+}
+
+.mySwiper2 {
+    margin-bottom: 120px;
+}
+
+.category__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+/* Poster */
+.poster {
+    padding: 65px 80px;
+    background-color: #f6f7fb;
+    border-radius: 6px;
+}
+
+.timers {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.Headphone {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    top: -24%;
+}
+
+
+
+
+/* Products */
+.product__container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.product__card{
+    max-width: 300px;
+}
+.product__image{
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.oldPrice{
+    text-decoration:line-through;
+    margin-left: 1rem;
+}
+
+
+
+/* Icon Colors */
+.mor {
+    background-color: var(--icon--subcolor);
+    color: #fff;
+    border-radius: 50%;
+}
+
+.pink {
+    background-color: var(--icon--color);
+    color: #fff;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:1200px) {
+
+    .title {
+        font-size: 50px;
+    }
+
+}
+
+@media screen and (max-width:990px) {
+    .nav__links {
+        display: none !important;
+    }
+
+    .btn-menu {
+        display: block;
+        border: none;
+        background: none;
+        font-size: 10px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .Headphone {
+        width: 300px;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .title {
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .subtitle {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .images {
+        margin-top: 50px;
+    }
+
+    .SmallImg {
+        display: none;
+    }
+
+    .Headphone {
+        width: 100%;
+        top: 0%;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    .logo {
+        height: 25px;
+        object-fit: cover;
+    }
+
+    .subtitle {
+        text-align: left;
+    }
+
+    .title {
+        text-align: left;
+    }
+
+    .settings {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}

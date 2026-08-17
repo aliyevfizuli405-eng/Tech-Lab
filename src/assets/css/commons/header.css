@@ -1,0 +1,21 @@
+
+
+.header{
+    background-color: var(--primary-bg-color);
+}
+
+.nav__pure{
+    height: 80px;
+    border-radius: 10px;
+}
+
+.nav__links{
+    display: flex;
+}
+.btn-menu{
+    display: none;
+}
+.logo{
+    max-width: 100%;
+    object-fit: cover;
+}
