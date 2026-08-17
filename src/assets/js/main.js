@@ -152,7 +152,7 @@ let ProductContainerElement=$("ProductContainer");
 
 let limit=8;
 
-async function getProducts(){
+function getProducts(){
     for(let i=0;i<products.length && i<limit;++i){
         ProductContainerElement.innerHTML+=`
         <div class="product__card">
