@@ -21,16 +21,23 @@
 
 .title {
     margin-bottom: 2.5rem;
-    font-size: 4rem;
+    font-size: 30px;
     font-weight: 700;
 }
 
-.bi-fire {
+.bi-fire{
     background-color: var(--icon--color);
     color: #fff;
-    border-radius: 10px;
-    padding: 3px;
-    margin-bottom: 2rem;
+    border-radius: 50%;
+}
+
+.bi-fire i{
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    text-align: center;
+    margin-right: 10px;
 }
 
 .btn-icon {
@@ -130,6 +137,10 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.category__card > h5{
+    font-size: 1rem;
+    font-weight: 500;
+}
 
 /* Poster */
 .poster {
@@ -166,6 +177,9 @@
 
 
 /* Products */
+.Products{
+    padding: 80px 0px;
+}
 .product__container{
     margin-top: 30px;
     display: flex;
@@ -178,22 +192,60 @@
 }
 .product__image{
     max-width: 300px;
-    height: auto;
+    height: 300px;
+    border-radius: 25px;
     object-fit: cover;
 }
-
+.product__name{
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--primary-subcolor);
+}
+.Pricetag{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
 .oldPrice{
+    margin: 4px;
+    font-size: 20px;
+    font-weight: 700;
     text-decoration:line-through;
-    margin-left: 1rem;
+    color: #d6d6d6;
+}
+.showButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.showButton > button{
+    color: var(--primary-subcolor);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px 38px;
+    background-color: #f6f7fb;
+    border: 1px solid #f6f7fb;
 }
 
+.Testimonials{
+    padding: 80px 0px;
+    background-color:#F9F3F0;
+}
+.commentImg > img{
+    margin: 10px;   
+}
+.swiper__para{
+    background-color:#ffffff;
+    padding: 1rem;
+    border-radius: 3%;
 
-
+}
 /* Icon Colors */
 .mor {
     background-color: var(--icon--subcolor);
     color: #fff;
     border-radius: 50%;
+    margin-right: 10px;
 }
 
 .pink {

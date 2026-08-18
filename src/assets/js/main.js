@@ -1,5 +1,8 @@
 const $ = id => (document.getElementById(id));
 
+
+let searchElement = $("search");
+let showButtonElement =$("showButton")
 const products = [
   {
     id: "1",
@@ -157,9 +160,17 @@ function getProducts(){
         ProductContainerElement.innerHTML+=`
         <div class="product__card">
                             <img class="product__image" src="${products[i].image}" alt="">
+                            <br>
+                            <br>
                             <h3 class="product__name">${products[i].name}</h3>
                             <p class="Pricetag">$${products[i].price}<span class="oldPrice">$${products[i].oldPrice}</span></p>
         </div>`;
     }
-}
+} 
 getProducts()
+
+showButtonElement.addEventListener("click",()=>{
+    limit+=4;
+    ProductContainerElement.innerHTML='';
+    getProducts()
+})
