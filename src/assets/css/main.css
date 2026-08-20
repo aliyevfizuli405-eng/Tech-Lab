@@ -227,6 +227,7 @@
     border: 1px solid #f6f7fb;
 }
 
+/* Testimonials */
 .Testimonials{
     padding: 80px 0px;
     background-color:#F9F3F0;
@@ -254,6 +255,13 @@
     border-radius: 50%;
 }
 
+
+@media screen and (min-width:1200px) {
+    .poster{
+        height: 550px;
+    }
+    
+}
 @media screen and (max-width:1200px) {
 
     .title {
@@ -309,6 +317,13 @@
     .Headphone {
         width: 100%;
         top: 0%;
+    }
+    .product__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
     }
 }
 
